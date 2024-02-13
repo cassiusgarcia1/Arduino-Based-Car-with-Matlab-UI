@@ -1,9 +1,9 @@
-**Purpose:**
-The purpose of this project is to use what we learned in this entire class relating to PWMs, sensors, motors, and various other tools, including MATLAB GUI, and combine them into one project.
+**About:**
+An Arduino-based car with a motor controller, temperature sensor, ultrasonic sensor, IR receiver, and an LCD. This project also displays the car's details via a Matlab UI.
 
 **Discussion:**
 I had to make large changes to the previous project’s code. I had to add functionality for a temperature sensor, RFID scanner, IR remote, and an LCD. 
-I also had to add interlocks for when the temperature goes too high or for when the coolant level is too low. Unfortunately, my water level sensor was defective, so I had to edit that part out of my code for it to work still. Something else that gave me a lot of trouble, but I was able to fix was libraries using the same PWM timer. Even though I didn’t activate any timers, the timer that was used for the buzzer and the timer for the IR receiver conflicted (timer 2), making it so my IR receiver was not working. To fix this, I began my IR receiver right after I was done using my buzzer in the code, meaning they no longer share the same timer.
+I also had to add interlocks for when the temperature goes too high or when the coolant level is too low. Unfortunately, my water level sensor was defective, so I had to edit that part out of my code for it to work still. Something else that gave me a lot of trouble, but I was able to fix was libraries using the same PWM timer. Even though I didn’t activate any timers, the timer that was used for the buzzer and the timer for the IR receiver conflicted (timer 2), making it so my IR receiver was not working. To fix this, I began my IR receiver right after I was done using my buzzer in the code, meaning they no longer share the same timer.
  
 The budget for the total current being used by my design is as follows:
 •	Total Available from Arduino: 50mA
